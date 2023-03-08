@@ -2,36 +2,35 @@ a = 'napis'
 print(a)
 print(type(a))
 b = 5
-print(a+str(b))
+print(a + str(b))
 
 c = 5
 d = 5.3
 
 print(c, d)
-e = c+d
+e = c + d
 print(e)
-f = 2+3j
+f = 2 + 3j
 print(f)
 print(type(f))
 
-print(c-d)
-print(c//d)
-print(c%d)
-print(c**d)
-print(2**(1/2))
+print(c - d)
+print(c // d)
+print(c % d)
+print(c ** d)
+print(2 ** (1 / 2))
 print(c)
-c+=2
+c += 2
 print(c)
 
-
-listy = ['2', 5, 6, 7, 6.5, [2,3,4]]
+listy = ['2', 5, 6, 7, 6.5, [2, 3, 4]]
 print(listy)
 listy.append(4)
 print(listy)
 print('-------------')
 
 # dodanie elementu do listy na danej pozycji
-listy.insert(3,'asdf')
+listy.insert(3, 'asdf')
 print(listy)
 print('-------------')
 
@@ -64,38 +63,38 @@ listy.sort()
 print(listy)
 print('-------------')
 
-slownik = {1: 'a', 2: 2, 3: 'klucz',1:3}
-print(slownik)    # {1: 3, 2: 2, 3: 'klucz'}
+slownik = {1: 'a', 2: 2, 3: 'klucz', 1: 3}
+print(slownik)  # {1: 3, 2: 2, 3: 'klucz'}
 
-print(slownik[3])    # klucz
+print(slownik[3])  # klucz
 slownik['nowy'] = 'wartosc'
-print(slownik)    # {1: 3, 2: 2, 3: 'klucz', 'nowy': 'wartosc'}
+print(slownik)  # {1: 3, 2: 2, 3: 'klucz', 'nowy': 'wartosc'}
 slownik.pop(2)
-print(slownik)    # {1: 3, 3: 'klucz', 'nowy': 'wartosc'}
-del(slownik[3])
-print(slownik)    # {1: 3, 'nowy': 'wartosc'}
+print(slownik)  # {1: 3, 3: 'klucz', 'nowy': 'wartosc'}
+del (slownik[3])
+print(slownik)  # {1: 3, 'nowy': 'wartosc'}
 
-print(slownik.keys())    # dict_keys([1, 'nowy'])
-print(slownik.values())    # dict_values([3, 'wartosc'])
+print(slownik.keys())  # dict_keys([1, 'nowy'])
+print(slownik.values())  # dict_values([3, 'wartosc'])
 
-print('a = %(zm)d' % {'zm': 12}) # a = 12
-print('a = {}'.format(12)) # a = 12
+print('a = %(zm)d' % {'zm': 12})  # a = 12
+print('a = {}'.format(12))  # a = 12
 
 napis = input('wprowadz liczbe: ')
 print(napis)
 # wprowadz liczbe: 13
 # 13
-print(type(napis))    # <class 'str'>
+print(type(napis))  # <class 'str'>
 napis = int(napis)
-print(type(napis))    # <class 'int'>
+print(type(napis))  # <class 'int'>
 
-#instrukcja warunkowa
-#if warunek:
-    #instrukcje
-#elif warunek
-    #instrukcje
-#else:
-    #instrukcje
+# instrukcja warunkowa
+# if warunek:
+# instrukcje
+# elif warunek
+# instrukcje
+# else:
+# instrukcje
 
 a = input('podaj a: ')
 b = input('podaj b: ')
@@ -126,13 +125,12 @@ if a == b:
 else:
     print('a nie rowne b')
 
-
 # for element in sekwencja:
 #     instrukcje:
 # else:
 #     instrukcje po petli
 
-for x in range(1, 6, 1):        # element poczatkowy, element koncowy (jest pomijany), o ile sie zwieksza
+for x in range(1, 6, 1):  # element poczatkowy, element koncowy (jest pomijany), o ile sie zwieksza
     print(x)
 else:
     print('koniec petli for')
@@ -143,12 +141,11 @@ else:
 # 5
 # koniec petli for
 
-lista = [3,5,2,3,3,4]
+lista = [3, 5, 2, 3, 3, 4]
 for x in lista:
     print(x)
 else:
     print('----')
-
 
 # while warunek:
 #     instrukcje
@@ -162,12 +159,13 @@ while licznik != len(lista):
 else:
     print('----')
 
-# zad: lista, w ktorej sa 4 elementy o wartosci 2, za pomoca petli while usunac wszystkie liczby 2
+# zad: lista, w ktorej sa elementy o wartosci 2, za pomoca petli while usunac wszystkie liczby 2
 
-lista_2 = [3,2,2,5,2,6,2,3]
+lista_2 = [3, 2, 2, 5, 2, 6, 2, 3, 8, 2]
 licznik = 0
 while licznik != len(lista_2):
     if lista_2[licznik] == 2:
-        lista_2.remove(lista_2[licznik])
-    licznik += 1
+        lista_2.remove(2)
+    else:
+        licznik += 1
 print(lista_2)
