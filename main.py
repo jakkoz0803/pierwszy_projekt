@@ -149,7 +149,25 @@ for x in lista:
 else:
     print('----')
 
-for x in range(0, lista.__sizeof__(), 1):
-    print(lista[x])
+
+# while warunek:
+#     instrukcje
+# else:
+#     instrukcje
+
+licznik = 0
+while licznik != len(lista):
+    print(lista[licznik])
+    licznik += 1
 else:
-    print('---')
+    print('----')
+
+# zad: lista, w ktorej sa 4 elementy o wartosci 2, za pomoca petli while usunac wszystkie liczby 2
+
+lista_2 = [3,2,2,5,2,6,2,3]
+licznik = 0
+while licznik != len(lista_2):
+    if lista_2[licznik] == 2:
+        lista_2.remove(lista_2[licznik])
+    licznik += 1
+print(lista_2)
