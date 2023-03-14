@@ -22,3 +22,21 @@ print(dowolna_zmienna_lancuchowa)
 print(dowolna_zmienna_lancuchowa[1], dowolna_zmienna_lancuchowa[len(dowolna_zmienna_lancuchowa) - 1])
 
 print("-------------- zad 5 --------------")
+print(dowolna_zmienna_lancuchowa.split())
+
+print("-------------- zad 6 --------------")
+liczba_1 = str(435)
+liczba_2 = float(254)
+liczba_3 = hex(353)
+print(liczba_1)
+print(liczba_2)
+print(liczba_3)
+
+print("-------------- zad 7 --------------")
+lista_sportow = ["pilka nozna","skoki narciarskie","siatkowka"]
+print(lista_sportow)
+lista_sportow.reverse()
+lista_sportow.append("koszykowka")
+lista_sportow.append("curling")
+print(lista_sportow)
+
