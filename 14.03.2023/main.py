@@ -75,3 +75,21 @@ if(b > max):
 if(c > max):
     max = c
 print("najwieksza liczba: ",max)
+
+print("-------------- zad 12 --------------")
+liczby_int_float = [3,17,4.25,100,3.14159]
+print(liczby_int_float)
+for i in range (0,len(liczby_int_float)):
+    liczby_int_float[i] *= liczby_int_float[i]
+print(liczby_int_float)
+
+print("-------------- zad 13 --------------")
+lista_parzysta = []
+i = 0
+print("podaj 10 liczb:\n")
+while i < 10:
+    parzysta = int(input())
+    if parzysta % 2 == 0:
+        lista_parzysta.append(parzysta)
+    i += 1
+print(lista_parzysta)
