@@ -40,3 +40,38 @@ lista_sportow.append("koszykowka")
 lista_sportow.append("curling")
 print(lista_sportow)
 
+print("-------------- zad 8 --------------")
+skroty = {
+    "np": "na przyklad",
+    "nwm": "nie wiem",
+    "wgl": "w ogole"
+}
+print(skroty.keys())
+print(skroty.values())
+
+print("-------------- zad 9 --------------")
+gry = {
+    "cs": "Counter Strike: Global Offensive",
+    "mc": "Minecraft",
+    "phasmo": "Phasmophobia"
+}
+print(gry.keys())
+print(gry.values())
+
+print("-------------- zad 10 --------------")
+print("prosze serdecznie o napisanie losowego zdania:\n")
+zdanie = input()
+print("napisales zdanie: " + zdanie)
+print("liczba liter 'a' w twoim zdaniu: ", zdanie.count("a"))
+
+print("-------------- zad 11 --------------")
+print("podaj 3 liczby: \n")
+a = input()
+b = input()
+c = input()
+max = a
+if(b > max):
+    max = b
+if(c > max):
+    max = c
+print("najwieksza liczba: ",max)
