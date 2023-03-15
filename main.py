@@ -1,4 +1,5 @@
 import random
+import math
 
 print("podaj a: ")
 a = input()
@@ -47,3 +48,22 @@ print(odwrocone)
 # --- python comprehension:
 odwrocone2 = {value: key for key, value in skroty.items()}
 print(odwrocone2)
+
+print("============ zad 4 ============")
+# Zdefiniuj funkcję, która sprawdzi, czy trójkąt jest prostokątny
+# VVV to ejst na razie przyklad, nie zadanie 4
+def czy_prostokatny(a,b,c):
+    if a**2 + b**2 == c**2:
+        print("prostokatny, a^2 + b^2 = c^2")
+        return True
+    elif a**2 + c**2 == b**2:
+        print("prostokatny, a^2 + c^2 = b^2")
+        return True
+    elif b**2 + c**2 == a**2:
+        print("prostokatny, b^2 + c^2 = a^2")
+        return True
+    else:
+        return False
+print(czy_prostokatny(3,6,2))
+print(czy_prostokatny(4,1,7))
+print(czy_prostokatny(3,4,5))
