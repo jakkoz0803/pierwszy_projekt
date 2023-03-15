@@ -51,7 +51,6 @@ print(odwrocone2)
 
 print("============ zad 4 ============")
 # Zdefiniuj funkcję, która sprawdzi, czy trójkąt jest prostokątny
-# VVV to ejst na razie przyklad, nie zadanie 4
 def czy_prostokatny(a,b,c):
     if a**2 + b**2 == c**2:
         print("prostokatny, a^2 + b^2 = c^2")
