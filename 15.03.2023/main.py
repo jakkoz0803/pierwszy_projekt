@@ -78,3 +78,12 @@ print(pole_trapezu())
 print(pole_trapezu(3,7,5))                  # kolejnosc ważna
 print(pole_trapezu(h = 3, a = 7, b = 5))    # kolejność dowolna
 
+print("============ zad 6 ============")
+def ilo_elem_ciagu(a = 1, b = 4, ile = 10):
+    wynik = 0
+    for i in range(ile):
+        wynik = wynik + a*(b**i)
+    return wynik
+print(ilo_elem_ciagu())         # wartosci domyslne
+print(ilo_elem_ciagu(1,2,4))    # podane wartosci
+
