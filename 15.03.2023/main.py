@@ -93,5 +93,20 @@ def ilo_elem_ciagu_2(*, a = 1, b = 4, ile = 10):
     for i in range(ile):
         wynik = wynik * a*(b**i)
     return wynik
-print(ilo_elem_ciagu_2())         # wartosci domyslne
-print(ilo_elem_ciagu_2(a = 1, b = 2, ile = 4))    # podane wartosci
+print(ilo_elem_ciagu_2())                           # wartosci domyslne
+print(ilo_elem_ciagu_2(a = 1, b = 2, ile = 4))      # podane wartosci
+# praktycznie to samo tylko trzeba podac
+# np. a=1, b=2, ile=4 zamiast
+# 1,2,4
+
+print("============ zad 8 ============")
+# ** - możemy użyć dowolną ilość argumentów z kluczem
+# kiedys zrobie
+
+print("============ zad 9 ============")
+print("podaj a: ")
+a = int(input())
+if a < 0:
+    print("nie mozna")
+else:
+    print(math.sqrt(a))
