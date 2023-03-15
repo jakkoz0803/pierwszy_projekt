@@ -34,9 +34,9 @@ print("============ zad 3 ============")
 # zdefiniowania nowej listy, gdzie będą produkty,
 # których wartości to sztuki.
 skroty = {
-    "PZU": "panstwt zakl uzebp",
-    "ZUS": "zakl usbs spspo",
-    "PKP": "pkpok k kpk p"
+    "cukier": "kg",
+    "woda": "l",
+    "jablko": "szt"
 }
 print(skroty)
 # --- zwykla petla:
