@@ -1,4 +1,5 @@
 import random
+import math
 
 print("podaj a: ")
 a = input()
@@ -33,4 +34,37 @@ print("============ zad 3 ============")
 # (np. sztuki, kg). Wykorzystaj Python Comprehension do
 # zdefiniowania nowej listy, gdzie będą produkty,
 # których wartości to sztuki.
+skroty = {
+    "cukier": "kg",
+    "woda": "l",
+    "jablko": "szt"
+}
+print(skroty)
+# --- zwykla petla:
+odwrocone = {}
+for key, value in skroty.items():
+    odwrocone[value] = key
+print(odwrocone)
+# --- python comprehension:
+odwrocone2 = {value: key for key, value in skroty.items()}
+print(odwrocone2)
 
+print("============ zad 4 ============")
+# Zdefiniuj funkcję, która sprawdzi, czy trójkąt jest prostokątny
+# VVV to ejst na razie przyklad, nie zadanie 4
+def kwadratowe(a,b,c):
+    delta = b**2 - 4*a*c
+    if delta < 0:
+        print("brak pierwiastkow")
+        return -1
+    elif delta == 0:
+        print("jeden")
+        x = (-b)/(2*a)
+        return x
+    else:
+        print("dwa")
+        x1 = (-b - math.sqrt(delta))/(2*a)
+        x2 = (-b + math.sqrt(delta)) / (2 * a)
+        return x1,x2
+print(kwadratowe(3,6,2))
+print(kwadratowe(4,1,7))
