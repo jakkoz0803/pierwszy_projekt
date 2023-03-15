@@ -51,20 +51,30 @@ print(odwrocone2)
 
 print("============ zad 4 ============")
 # Zdefiniuj funkcję, która sprawdzi, czy trójkąt jest prostokątny
-# VVV to ejst na razie przyklad, nie zadanie 4
-def kwadratowe(a,b,c):
-    delta = b**2 - 4*a*c
-    if delta < 0:
-        print("brak pierwiastkow")
-        return -1
-    elif delta == 0:
-        print("jeden")
-        x = (-b)/(2*a)
-        return x
+def czy_prostokatny(a,b,c):
+    if a**2 + b**2 == c**2:
+        print("prostokatny, a^2 + b^2 = c^2")
+        return True
+    elif a**2 + c**2 == b**2:
+        print("prostokatny, a^2 + c^2 = b^2")
+        return True
+    elif b**2 + c**2 == a**2:
+        print("prostokatny, b^2 + c^2 = a^2")
+        return True
     else:
-        print("dwa")
-        x1 = (-b - math.sqrt(delta))/(2*a)
-        x2 = (-b + math.sqrt(delta)) / (2 * a)
-        return x1,x2
-print(kwadratowe(3,6,2))
-print(kwadratowe(4,1,7))
+        return False
+print(czy_prostokatny(3,6,2))
+print(czy_prostokatny(4,1,7))
+print(czy_prostokatny(3,4,5))
+
+print("============ zad 5 ============")
+# Zdefiniuj fuckcję, która obliczy pole trapezu.
+# Funkcja ma przyjmować wartości domyślne
+def pole_trapezu(a = 0, b = 0, h = 0):
+    return ((a+b)*h)/2
+# wywołanie funkcji dla wartości domyślnych:
+print(pole_trapezu())
+# wywołanie funkcji dla podanych wartości:
+print(pole_trapezu(3,7,5))                  # kolejnosc ważna
+print(pole_trapezu(h = 3, a = 7, b = 5))    # kolejność dowolna
+
