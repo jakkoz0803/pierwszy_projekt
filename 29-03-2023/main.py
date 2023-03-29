@@ -25,7 +25,7 @@ def sumaList(lista1, lista2):
     return lista3
 print(sumaList(lista1,lista2))
 
-# zad 3
+# zad 3 (nie jest dokonczone, nie ma tego czegos ze jak jest 0 wielkich liter to cos tam
 plik = open("tekst.txt","r", encoding="utf8")
 plik.read(99)
 lines = plik.read(35)
