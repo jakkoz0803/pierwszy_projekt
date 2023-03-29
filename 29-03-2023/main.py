@@ -25,10 +25,18 @@ def sumaList(lista1, lista2):
     return lista3
 print(sumaList(lista1,lista2))
 
-# zad 4
-# lista liczby calkowite, zmienna a
-# nowa lista - elementy z listy1 wieksze od a
+# zad 3
+plik = open("tekst.txt","r", encoding="utf8")
+plik.read(99)
+lines = plik.read(35)
+print(lines)
+caps = [x for x in lines if x.isupper()]
+print(caps)
+print(len(caps))
 
+plik.close()
+
+# zad 4
 lista1 = [1,3,5,7,9,0,2,4,6,8]
 a = 4
 lista2 = [lista1[i] for i in range(len(lista1)) if lista1[i] > a]
@@ -37,4 +45,3 @@ print(lista2)
 # zad 5
 wynik = math.pow(pow(math.e,3) + pow(math.cos(39),2),1/5) + math.pow(2/7,3) + math.pi
 print(round(wynik,2))
-print(wynik)
