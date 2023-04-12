@@ -120,3 +120,28 @@ rows = np.array([[0,0],[3,3]])
 cols = np.array([[0,2],[0,2]])
 y = x[rows,cols]
 print(y)
+print("=================================================================")
+#====================================================
+#                   zadania                         #
+#====================================================
+
+#zad 1
+a = np.arange(4,20*4+1,4)
+print(a)
+
+#zad 2
+a = np.array([[0.0,1.0],[2.5,3.0]])
+b = a.astype('int32')
+print(a)
+print(b)
+
+#zad 3
+def wymiar(n):
+    licznik = 2
+    m = np.zeros([n,n],dtype='int64')
+    for i in range(n):
+        for j in range(n):
+            m[i,j] = licznik
+            licznik *= 2
+    return m
+print(wymiar(5))
