@@ -158,3 +158,13 @@ zad2 = generuj(2,4)
 print(zad2)
 zad2 = generuj(3,5)
 print(zad2)
+
+#zad 5 (jeden parametr: dlugosc wektora
+#       na podstawie parametru generuj wektor, ale w odwroconej kolejnosci
+#       generuj macierz diagonalna z wyzej wymienionym wektorem
+#       na przekatnej oddalonej o 2 w gore od glownej przekatnej macierzy)
+def generuj(dlugosc):
+    mat_diag_k = np.diag([a for a in range(dlugosc)],2)
+    return mat_diag_k
+print(generuj(5))
+# NIE DZIALA jak cos
