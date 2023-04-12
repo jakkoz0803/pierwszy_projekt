@@ -145,3 +145,16 @@ def wymiar(n):
             licznik *= 2
     return m
 print(wymiar(5))
+
+#zad 4 (2 parametry: podstawa potegi i ilosc kolejnych poteg do wygenerowania.
+#       funkcja logspace - generuj tablice 1 wymiarowa kolejnych poteg, np.
+#       generuj(2,4) -> [2,4,8,16])
+def generuj(podstawa, ilosc): # 2,4
+    m = np.arange(ilosc)
+    for i in range(ilosc):
+        m[i] = podstawa**(i+1)
+    return m
+zad2 = generuj(2,4)
+print(zad2)
+zad2 = generuj(3,5)
+print(zad2)
