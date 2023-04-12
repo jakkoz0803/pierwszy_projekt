@@ -1,0 +1,1 @@
+file -> settings -> Project:__ -> python interpreter -> kliknac plus -> numpy -> wersja 1.24.1
