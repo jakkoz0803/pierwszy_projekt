@@ -38,7 +38,37 @@ print(zera.dtype)
 print(jedynki.dtype)
 #mozna rowniez stworzyc "pusta" macierz o podanych wymiarach
 #wartosci umieszczane sa losowe, najpierw podawana jest cos tam
-pusta = np.empty([2,2])
-print(pusta)
+macierz = np.empty([2,2])
+print(macierz)
 # #do elementow tablic mozemy odwolac sie tak jak do cos tam
-
+poz_1 = macierz[1,1]
+poz_2 = macierz[0][1]
+print(poz_1)
+print(poz_2)
+# #tworzenie macierzy 2x2 wraz z uzupelnieniem
+liczby = np.arange(1,2,0.1)
+print(liczby)
+# podobnie dziala funkcja linspace
+liczby_lin = np.linspace(1,2,5,endpoint=False)
+print(liczby_lin)
+liczby_lin = np.linspace(1,2,5,endpoint=True)
+print(liczby_lin)
+#a teraz mozemy utworzyc dwie macierze, najpierw wartosci cos tam
+z = np.indices((5,3))
+print("=========")
+print(z)
+print("=========")
+print(z[0])
+print(z[0][1])
+print(z[0][1][2])
+# #podobnie jak w MATLAB mozemy tworzyc macierz diagonal
+mat_diag = np.diag([a for a in range(5)])
+print(mat_diag)
+#w powyzszym przykladzie stworzony wektor wartosci cos tam
+#mozemy podac drugi parametr funkcji diag, ktory okresla cos tam
+#ktora zostanie wypelniona wartosciami podanego wektora
+mat_diag_k = np.diag([a for a in range(5)], 1)
+print(mat_diag_k)
+#Numpy jest w stanie stworzyc tablice jednowymiarowa z cos tam
+z = np.fromiter(range(5), dtype='int32')
+print(z)
