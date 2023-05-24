@@ -1,0 +1,11 @@
+na kolokwium:
+4 zadania
+wykresy tez wyslac jako zdjecia na priv
+raczej nie bedzie excel, tylko csv
+//
+zad 1 to jest zrobienie zwyklego wykresu liniowego z jakas funkcja
+na pewnym wektorze x
+2 odwzorowanie siatki i tam jest tylko plik ze zdjeciem siatki
+i samemu trzeba odwzorowac
+3 biblio pandas, zrobienie grupy i wykresu
+4 wykres z matplotlib albo z seaborn
