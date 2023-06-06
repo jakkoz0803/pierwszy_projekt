@@ -100,6 +100,8 @@ data.columns = ['Class', 'Alcohol', 'Malic acid', 'Ash', 'Alcalinity of ash', 'M
                 'Total phenols', 'Flavanoids', 'Nonflavanoid phenols', 'Proanthocyanins',
                 'Color intensity', 'Hue', 'OD280/OD315 of diluted wines', 'Proline']
 
+data['Class'] = data['Class'].map({1: 'Class 1', 2: 'Class 2', 3: 'Class 3'})
+
 # Utworzenie wykresu kolumnowego z wykorzystaniem biblioteki seaborn
 sns.barplot(data=data, x='Class', y='Alcohol')
 
